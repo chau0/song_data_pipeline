@@ -6,6 +6,12 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """This function transform song data from json to relational data
+        
+    Args:
+        cur : database connection 
+        filepath (string): path of json file
+    """
     # open song file
     df = pd.read_json(filepath,lines=True)
 
@@ -19,6 +25,12 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """This function transform log data from json to relational data
+        
+    Args:
+        cur : database connection 
+        filepath (string): path of json file
+    """
     # open log file
     df = pd.read_json(filepath,lines=True)
 
