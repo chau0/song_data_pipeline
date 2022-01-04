@@ -2,6 +2,12 @@
 
 This project build an ETL pipeline transform data in json file to relational data 
 
+## Entity relation diagram
+![image info](./mermaid/ER_img.png)
+
+# Dataset
+The [Million Song Dataset](http://millionsongdataset.com/) is a freely-available collection of audio features and metadata for a million contemporary popular music tracks.
+
 # Source code files:
 - test.ipynb displays the first few rows of each table to let you check your database.
 - create_tables.py drops and creates tables. Run this file to reset tables before each time you run your ETL scripts.
