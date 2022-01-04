@@ -3,7 +3,7 @@
 This project build an ETL pipeline transform data in json file to relational data 
 
 ## Entity relation diagram
-![image info](./mermaid/ER_img.png)
+![image info](./mermaid/ER_diagram.png)
 
 # Dataset
 The [Million Song Dataset](http://millionsongdataset.com/) is a freely-available collection of audio features and metadata for a million contemporary popular music tracks.
