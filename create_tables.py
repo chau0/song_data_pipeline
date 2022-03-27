@@ -28,7 +28,7 @@ def main():
     """
     - Drops (if exists) and creates the redshift database. 
     
-    - Establishes connection with the redshfit database and gets
+    - Establishes connection with the redshift database and gets
     cursor to it.
     
     - Drops all the tables.
