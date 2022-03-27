@@ -4,12 +4,20 @@ from sql_queries import create_table_queries, drop_table_queries
 
 
 def drop_tables(cur, conn):
+    """
+    Drop these old tables if exist
+
+    """
     for query in drop_table_queries:
         cur.execute(query)
         conn.commit()
 
 
 def create_tables(cur, conn):
+    """
+    Create tables using for ELT pipeline
+
+    """
     for query in create_table_queries:
         print(query)
         cur.execute(query)
@@ -17,6 +25,18 @@ def create_tables(cur, conn):
 
 
 def main():
+    """
+    - Drops (if exists) and creates the redshift database. 
+    
+    - Establishes connection with the redshfit database and gets
+    cursor to it.
+    
+    - Drops all the tables.
+    
+    - Creates all tables needed. 
+    
+    - Finally, closes the connection. 
+    """
     config = configparser.ConfigParser()
     config.read('dwh.cfg')
 
