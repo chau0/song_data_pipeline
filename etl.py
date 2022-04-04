@@ -124,7 +124,7 @@ def main():
     process song data and log data and write output to s3 setting inf config file
     """
     spark = create_spark_session()
-    input_data = config['S3']['INPUT']
+    input_data = config['S3']['IN_PUT']
     output_data = config['S3']['OUT_PUT']
     
     process_song_data(spark, input_data, output_data)    
